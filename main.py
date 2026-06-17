@@ -34,8 +34,6 @@ def main():
             axes[j].set_ylim(0, 53000)
         fig.savefig(f'cluster{i}.png')
 
-
-
     # Plot the clusters
     for i, col in enumerate(target):
         axes[i].scatter(df[col], df['eps'], c=df['cluster'], cmap='gist_rainbow')
